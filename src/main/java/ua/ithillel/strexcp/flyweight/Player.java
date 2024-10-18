@@ -1,8 +1,12 @@
 package ua.ithillel.strexcp.flyweight;
 
+import java.io.Closeable;
+import java.io.IOException;
+
 public class Player {
     private String name;
     private ColorManager colorManager = new ColorManager();
+
 
     private Color color;
 
@@ -18,4 +22,5 @@ public class Player {
     public Color getColor() {
         return color;
     }
+
 }
